@@ -1,0 +1,9 @@
+P = 10000
+n = 12
+r = 0.08
+t = int(input("how many years?"))
+Q = (n * t)
+A = P * (1+ (r / n)) ** Q
+print(A)
+how many years?5
+14898.45708301605
