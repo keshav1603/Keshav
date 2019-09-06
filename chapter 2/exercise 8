@@ -1,0 +1,10 @@
+my_time = int(input('What time is it in 24hr clock?'))
+wait_time = int(int('How long do you want to wait?'))
+S = wait_time // 24
+D = wait_time - S * 24
+F = my_time + D
+if F > 24:
+    L = F - 24
+    print (L)
+if F < 24:
+    print(F)
