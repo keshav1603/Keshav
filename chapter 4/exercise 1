@@ -1,0 +1,33 @@
+import turtle
+t = turtle.Turtle()
+def createWindow(bgcolor, title):
+    w = turtle.Screen()
+    w.bgcolor(bgcolor)
+    w.title(title)
+    return w
+
+def createTurtle(color, size):
+      t = turtle.Turtle()
+      t.pensize(size)
+      t.color(color)
+      return t
+
+def jump(t, l):
+    t.penup()
+    t.forward(l)
+    t.pendown()
+
+def draw_square(t, l):
+      for i in range(4):
+        t.forward(l)
+        t.left(90)
+jump(t, 20)
+
+
+wn = createWindow("lightgreen", "Exercises 4.1")
+tess = createTurtle("hotpink", 3)
+
+for i in range(10):
+      draw_square(tess, 20)
+
+wn.mainloop()
