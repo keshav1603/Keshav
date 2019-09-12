@@ -1,0 +1,17 @@
+a)
+nums = [12, 10, 32, 3, 66, 17, 42, 99, 20]
+for i in nums:
+    print(i)
+
+b)
+nums = [12, 10, 32, 3, 66, 17, 42, 99, 20]
+for i in nums:
+    print(i)
+
+squared = [ ]
+
+for i in nums:
+    squared.append(i*i)
+    print("The square of {} is {}".format(i, squared[-1]))
+
+c)
