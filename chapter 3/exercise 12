@@ -1,0 +1,26 @@
+import turtle          
+  5: 
+  6: wn = turtle.Screen()
+  7: wn.title("A face of a clock")
+  8: wn.bgcolor("lightgreen")
+  9: 
+ 10: alex = turtle.Turtle()
+ 11: alex.pensize(3)
+ 12: alex.speed(0)
+ 13: alex.shape("turtle")
+ 14: alex.color("blue")
+ 15: 
+ 16: for i in range(12):
+ 17:     alex.penup()
+ 18:     alex.forward(80)
+ 19:     alex.pendown()
+ 20:     alex.forward(10)
+ 21:     alex.penup()
+ 22:     alex.forward(30)
+ 23:     alex.stamp()
+ 24:     alex.backward(120)
+ 25:     alex.right(30)
+ 26: 
+ 27: alex.stamp()
+ 28: 
+ 29: wn.mainloop()  
