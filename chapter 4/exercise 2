@@ -1,0 +1,30 @@
+import turtle
+def drawSquare(t,side):
+
+  for i in range(4):
+
+      t.forward(side)
+      t.left(90)
+
+
+wn = turtle.Screen()
+wn.bgcolor("light green")
+sven = turtle.Turtle()
+sven.fillcolor("purple")
+sven.speed(5)
+
+mv = -10
+
+
+for s in range(20, 101,20):
+
+  drawSquare(sven,s)
+
+  sven.penup()
+  sven.goto(mv,mv)
+  sven.pendown()
+  mv = mv -10
+
+
+
+wn.exitonclick()
