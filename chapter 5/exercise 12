@@ -1,4 +1,3 @@
-#Extend the above program so that the sides can be given to the function in any order.
 
 def is_rightangled(a, b, c):
 
