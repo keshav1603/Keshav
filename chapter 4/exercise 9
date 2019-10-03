@@ -1,0 +1,7 @@
+import turtle
+tom =turtle.Turtle()
+tom.speed(100)
+def draw_star():
+    for i in range(5):
+        tom.forward(100)
+        tom.right(144)
