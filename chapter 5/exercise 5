@@ -1,4 +1,3 @@
-#Complete this truth table:
 
 p = [False, False, False, False, True, True, True, True]
 q = [False, False, True, True, False, False, True, True]
