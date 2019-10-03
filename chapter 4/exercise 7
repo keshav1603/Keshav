@@ -1,0 +1,8 @@
+import turtle
+tom =turtle.Turtle()
+tom.speed(100)
+def sum_to(n):
+    x = 0
+    for i in range(n+1):
+        x = x + i
+    print(x)
