@@ -1,0 +1,11 @@
+  
+import turtle
+tom =turtle.Turtle()
+tom.speed(100)
+size = 5
+tom.setheading(270)
+for i in range(51):
+    tom.forward(size)
+    size = size + 5
+    tom.right(90)
+turtle.done()
