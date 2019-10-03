@@ -1,4 +1,3 @@
-#Modify the turtle bar chart program so that the pen is up for the small gaps between each bar.
 
 import turtle
 
