@@ -1,4 +1,3 @@
-#Write the inverse function day_num which is given a day name, and returns its number:
 
 def day_name(x):
     if x == "Monday":
