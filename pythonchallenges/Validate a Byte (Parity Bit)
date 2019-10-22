@@ -1,0 +1,33 @@
+choice1 = int(input("Do you want to 1)check the parity bit or 2)generate a parity bit"))
+if choice1 == 1:
+    bits = input("Enter the 8 bit binary code")
+    choice2 = int(input("Is the parity bit 1)odd or 2)even"))
+    if choice2 == 1:
+        number_of_1 = bits.count("1")
+        if number_of_1 == 1 or number_of_1== 3 or number_of_1==5 or number_of_1==7:
+            print("True")
+        elif number_of_1 == number_of_1==0 or number_of_1==2 or number_of_1==6 or number_of_1==8:
+            print("False")
+    if choice2 == 2:
+        number_of_1 = bits.count("1")
+        if number_of_1 == number_of_1==0 or number_of_1==2 or number_of_1==6 or number_of_1==8:
+            print("True")
+        elif number_of_1 == number_of_1==1 or number_of_1==3 or number_of_1==5 or number_of_1==7:
+            print("False")
+
+if choice1 ==2:
+    choice2=int(input("Is the parity bit 1)odd or 2)even"))
+    bits = input("Enter the 7 bit binary code")
+    if choice2 == 1:
+        number_of_1 = bits.count("1")
+        if number_of_1 == number_of_1==0 or number_of_1==2 or number_of_1==6 or number_of_1==8:
+            print(bits+"1")
+        elif number_of_1 == number_of_1==1 or number_of_1==3 or number_of_1==5 or number_of_1==7:
+            print(bits+"0")
+
+    if choice2 == 2:
+        number_of_1 = bits.count("1")
+        if number_of_1 == 0 or number_of_1==2 or number_of_1==6 or number_of_1==8:
+            print(bits+"0")
+        elif number_of_1 == 1 or number_of_1==3 or number_of_1==5 or number_of_1==7:
+            print(bits+"1")
