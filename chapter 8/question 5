@@ -1,1 +1,27 @@
 
+punctuation = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
+
+def remove_punctuation(s):
+    s_sans_punct = ""
+    for letter in s:
+        if letter not in punctuation:
+            s_sans_punct += letter
+    return s_sans_punct
+
+def count_letters(s):
+    words = s.split()
+    wordCount = len(words)
+    sum = 0
+    for word in words:
+        ch = len(word)
+        sum += ch
+    return sum
+
+def number_of_e(s):
+    x = remove_punctuation(s)
+    print(x)
+    y = x.find("e")
+    print(y)
+    print("Your text contains",count_letters(x),"of which",y,(y/count_letters(x))*100,"% contains an 'e'")
+
+number_of_e("hello.")
