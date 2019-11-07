@@ -1,1 +1,10 @@
-
+fruit = "banana"
+def count_letters(s):
+    words = s.split()
+    wordCount = len(words)
+    sum = 0
+    for word in words:
+        ch = len(word)
+        sum += ch
+    return sum
+print(count_letters("BANANA"))
