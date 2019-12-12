@@ -1,0 +1,20 @@
+Monster_file = open("Monsters.txt","r")
+while True:
+    theline = Monster_file.readline()
+    if len(theline) == 0:
+        break
+
+    print(theline, end="")
+
+Monster_file.close()
+
+def Makelist():
+    monster_list = ()
+    with open("Monsters.txt") as f:
+        for line in f:
+            parts = line.split(",")
+            monster_list.append(parts[1])
+        for monster in monster_list:
+            print(monster)
+
+Makelist()
