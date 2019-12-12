@@ -1,0 +1,32 @@
+Monster = open("Monsters.txt", "r")
+while True:
+    theline = Monster.readline()
+    if len(theline) == 0:
+        break
+
+    print(theline, end="")
+
+Monster_list = []
+Monster.close()
+
+def CreateList():
+    with open('Monsters.txt') as l:
+        for line in l:
+            Part = line.split(",")
+            Monster_list.append(Part[1])
+        for monster in Monster_list:
+            print(monster.upper())
+
+def SearchList():
+    with open('Monsters.txt') as i:
+        for line in i:
+            Part = line.split(",")
+            Search = (input("Please enter the name of a monster in capital letters"))
+            if Search == (Part[1].upper()):
+                print(Monster_list[1:])
+            else:
+                print("Monster Not Found")
+
+
+CreateList()
+SearchList()
