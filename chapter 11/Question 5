@@ -1,0 +1,8 @@
+def add_vectors(u,v):
+    a = []
+    for i in u:
+        x = u[i-1] + v[i-1]
+        a.append(x)
+    return a
+
+print(add_vectors([1,2],[1,3]))
