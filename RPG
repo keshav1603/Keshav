@@ -1,0 +1,47 @@
+class Character:
+    def __init__(self):
+        self.name = ""
+        self.attack = 0
+        self.defence = 0
+        self.health = 0
+        self.experience = 0
+
+    def print_basics(self):
+        print("Name:       ", self.name)
+        print("attack:     ", self.attack)
+        print("defence     ", self.defence)
+        print("health:     ", self.health)
+        print("experience: ", self.experience)
+
+    def print_me(self):
+        self.print_basics()
+
+    def print_intro(self):
+        print('This is an exciting story')
+
+
+class wizard(Character):
+    def __init__(self):
+        Character.__init__(self)
+        self.magic = 0
+
+    def print_me(self):
+        self.print_basics()
+        print("magic ", self.magic)
+
+
+class knight(Character):
+    def __init__(self):
+        Character.__init__(self)
+        self.armour = 0
+
+    def print_me(self):
+        self.print_basics()
+        print("armour ", self.armour)
+
+
+Gandalf = wizard()
+Gandalf.print_me()
+
+Arthur = knight()
+Arthur.print_me()
